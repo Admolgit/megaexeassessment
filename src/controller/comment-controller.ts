@@ -3,7 +3,7 @@ import { Request, Response, NextFunction  } from "express";
 import Comment from "../model/comment";
 import Blog from "../model/Blog";
 
-const addComment = async (req: Request, res: Response) => {
+export const addComment = async (req: Request, res: Response) => {
   const { comment, blog } = req.body;
 
   console.log(comment, blog)
@@ -52,7 +52,7 @@ const addComment = async (req: Request, res: Response) => {
   })
 };
 
-const updateComment = async (req: Request, res: Response, next: NextFunction) => {
+export const updateComment = async (req: Request, res: Response, next: NextFunction) => {
   const commentId = req.params.id;
   const { comment, blog } = req.body;
 
@@ -77,10 +77,3 @@ const updateComment = async (req: Request, res: Response, next: NextFunction) =>
     comment: existingComment
   });
 }
-
-
-
-module.exports = {
-  addComment,
-  updateComment
-};

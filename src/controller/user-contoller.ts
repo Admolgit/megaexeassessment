@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction  } from "express";
 import User from '../model/User';
 import bcrypt from 'bcryptjs';
-import {generateToken} from '../utils/generateToken';
+import { generateToken } from '../utils/generateToken';
 
 
 export const getAllUser = async (req: Request, res: Response, next: NextFunction) => {

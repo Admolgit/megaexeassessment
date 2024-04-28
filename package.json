@@ -4,7 +4,7 @@
   "description": "Ademola Sodiq",
   "main": "./build/server.js",
   "scripts": {
-    "start": "nodemon ./build/server.js",
+    "start": "node api.js && nodemon ./build/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "khushi patel",
