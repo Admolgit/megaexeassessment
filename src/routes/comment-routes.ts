@@ -1,5 +1,5 @@
-const express = require('express');
-const { addComment, updateComment } = require('../controller/comment-controller');
+import express from 'express';
+import { addComment, updateComment } from '../controller/comment-controller';
 const { generalAuth } = require("../auth/authourization");
 
 const commentRouter = express.Router();

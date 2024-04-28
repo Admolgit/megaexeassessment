@@ -1,6 +1,6 @@
 import express from 'express';
 import { addLike, deleteLike } from '../controller/like-controller';
-const { generalAuth } = require("../auth/authourization");
+import { generalAuth } from '../auth/authourization';
 
 const likeRouter = express.Router();
 
